@@ -13,7 +13,7 @@ As principais funções são de cadastrar alunos, visualizar alunos e excluir al
 E também por ser um requisito do projeto o FETCH API utilizamos como exemplo a API dos correios de CEP. 
 Por não acharmos outra API relevante para o Projeto acabamos utilizando essa do CEP.
 
-D. Contato 
+**D. Contato**
 Feito por: 
 1- Luis Gustavo Souza Souto - ltt.gustavo@gmail.com - (11) 96809-1057. 
 2- Luigi Curi Zago - luigi1curi2zago3@gmail.com.
