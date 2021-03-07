@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+     <ul>
+        <li><a class="active" href="index">Home</a></li>
+        <li><a href="inserir">Adicionar Alunos</a></li>
+        <li><a href="select">Mostrar Alunos</a></li>
+        <li><a href="cep">Consultar Cep</a></li>
+    </ul>
+    <div class="bgc">
+    <form class="login-form" method="get" action=".">
+      <label
+        >Cep:
+        <input
+          name="cep"
+          type="text"
+          id="cep"
+          value=""
+          maxlength="9"
+          onblur="pesquisacep(this.value);"
+      /></label>
+      <label>Rua: <input name="rua" type="text" id="rua" /></label>
+      <label>Bairro: <input name="bairro" type="text" id="bairro" /></label>
+      <label>Cidade: <input name="cidade" type="text" id="cidade" /></label>
+      <label>Estado: <input name="uf" type="text" id="uf" /></label>
+      <label>IBGE: <input name="ibge" type="text" id="ibge" /></label>
+      
+    </form>
+    </div>
+    <footer>
+        <p id="hora"></p>
+    </footer>
+    <script src="/js/javascript.js"></script>
+</body>
+</html>

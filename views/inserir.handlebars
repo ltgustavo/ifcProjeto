@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/style.css'>
+    <title>Adicionar Alunos</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="index">Home</a></li>
+        <li><a href="inserir">Adicionar Alunos</a></li>
+        <li><a href="select">Mostrar Alunos</a></li>
+        <li><a href="cep">Consultar Cep</a></li>
+    </ul>
+    <div class="bg">
+        <form class='login-form' action="controllerForm" method="POST">
+
+            <label for="name">Nome do Aluno: </label>
+            <input type="text" name="name" id="name"> </br>
+
+            <label for="name">Matrícula do Aluno: </label>
+            <input type="text" name="matricula" id="matricula"> </br>
+
+            <label for="nota1">Primeira Nota: </label>
+            <input type="text" name="nota1" id="nota1"> </br>
+
+            <label for="nota2">Segunda Nota: </label>
+            <input type="text" name="nota2" id="nota2"> </br>
+
+            <label for="nota3">Terceira Nota: </label>
+            <input type="text" name="nota3" id="nota3"> </br>
+
+            <input type="submit" name="btnSubmit" id="btnSubmit" value="Adicionar Aluno">
+
+        </form>
+    </div>
+    <footer>
+        <p id="hora"></p>
+    </footer>
+</body>
+
+</html>

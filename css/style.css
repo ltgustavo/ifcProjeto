@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px Roboto, sans-serif;
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content-table {
+  background-color: #fff;
+  text-align: center;
+  margin-left: 200px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 50%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6b6b6b;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.login-form {
+  width: 380px;
+  padding: 40px;
+  position: absolute;
+  text-align: center;
+  top: 48%;
+  left: 50%;
+  background: #6b6b6b;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background-image: url(https://ingresso.ifc.edu.br/wp-content/themes/portal-de-ingresso/images/bkg_triangle.png);
+  background-blend-mode: soft-light;
+}
+
+.login-form h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.login-form label {
+  color: white;
+  font-weight: bold;
+}
+
+.login-form p {
+  color: white;
+  font-weight: bold;
+}
+
+.login-form input {
+  background: none;
+  font-weight: bold;
+  display: block;
+  margin: 12px auto;
+  padding: 12px 8px;
+  text-align: center;
+  border: 2px solid #63afe2;
+  width: 220px;
+  color: white;
+  border-radius: 20px;
+  transition: 0.35s;
+}
+.login-form input[type="text"]:focus{
+  width: 280px;
+  border-color: #1ae66f;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.login-form input[type="submit"] {
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid#1ae66f;
+  padding: 14px 40px;
+  color: white;
+  width: 200px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.login-form input[type="submit"]:hover {
+  background: #22c868;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #6b6b6b;
+  color: white;
+  text-align: center;
+}
+
+.titulo {
+  color: #f3f3f3;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(http://www.camboriu.ifc.edu.br/wp-content/uploads/2014/06/frente.jpg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.bg{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(http://www.camboriu.ifc.edu.br/wp-content/uploads/2014/06/frente.jpg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.bgc{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://blog.neemo.com.br/wp-content/uploads/2020/11/GettyImages-1218787688-Converted-01.png);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.bem-vindo {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+}
+
+.bem-vindo h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.bem-vindo h1 span {
+  color: #00fecb;
+}
+
+.bem-vindo a {
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.bem-vindo a:hover {
+  background: #fff;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .logo {
+    float: none;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .nav-area {
+    float: none;
+    margin-top: 0;
+  }
+
+  .nav-area li a {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .nav-area {
+    text-align: center;
+  }
+
+  .bem-vindo {
+    width: 100%;
+    height: auto;
+    margin: 30% 0;
+  }
+
+  .bem-vindo h1 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/style.css'>
+    <title>Dados Alunos</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="index">Home</a></li>
+        <li><a href="inserir">Adicionar Alunos</a></li>
+        <li><a href="select">Mostrar Alunos</a></li>
+        <li><a href="cep">Consultar Cep</a></li>
+    </ul>
+
+    <div class="bg">
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <td>Action</td>
+                    <td>Id</td>
+                    <td>Nome do Aluno</td>
+                    <td>Matrícula</td>
+                    <td>Nota 1</td>
+                    <td>Nota 2</td>
+                    <td>Nota 3</td>
+                    <td>Média Final</td>
+                </tr>
+            </thead>
+
+            {{#data}}
+            <tbody></tbody>
+            <tr class="active-row">
+                <td>
+                    <a href="deletar/{{id}}" class="deletar"><img src="/img/delete.svg" width="28" height="28" </a>
+                </td>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{matricula}}</td>
+                <td>{{nota1}}</td>
+                <td>{{nota2}}</td>
+                <td>{{nota3}}</td>
+                <td>{{media_final}}</td>
+            </tr>
+            </tbody>
+            {{/data}}
+        </table>
+    </div>
+    <footer>
+        <p id="hora"></p>
+    </footer>
+</body>
+
+</html>
